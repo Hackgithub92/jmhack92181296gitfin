@@ -12,7 +12,7 @@ const UserListItem  = (props) =>  {
           <i className="glyphicon glyphicon-list"></i> Lists
         </button>
       </Link>
-      <button className="btn btn-success btn-sm" onClick={event => props.onEdit("edit",props)}>
+      <button className="btn btn-success btn-sm" onClick={event => props.onEdit("edit",props.id)}>
         <i className="glyphicon glyphicon-pencil"></i> Edit
       </button>
       <button className="btn btn-danger btn-sm" onClick={event => props.onDelete(props.id)}>
