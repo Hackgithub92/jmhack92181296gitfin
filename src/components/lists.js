@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
-const API_BASE = 'http://localhost:8080';
+const API_BASE = 'https://todo-api-jmhack.herokuapp.com/';
 
 const ListItem  = (props) =>  {
   return (
@@ -73,11 +73,11 @@ class Lists extends React.Component {
 
   render() {
 
-    const listItems = this.state.posts.map((list)  => {
+    const listItems = this.state.lists.map((list)  => {
       return (
         <ListItem
           title={list.title}
-          body={list.article}
+          body={list.body}
           user_id = {list.user_id}
           id={list.id}
           key={list.id}
@@ -95,8 +95,8 @@ class Lists extends React.Component {
           <table className="table table-hover">
             <thead>
               <tr>
-                <th className="col-md-4">Title</th>
-                <th className="col-md-4">Body</th>
+                <th className="col-md-3">Title</th>
+                <th className="col-md-3">Body</th>
               </tr>
             </thead>
             <tbody>

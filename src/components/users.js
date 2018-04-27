@@ -2,7 +2,7 @@ import React from 'react';
 import UserForm from './user_form';
 import UserList from './user_list';
 import axios from 'axios';
-const API_BASE = "http://localhost:8080";
+const API_BASE = "https://todo-api-jmhack.herokuapp.com/";
 
 
 class Users extends React.Component {
