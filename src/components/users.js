@@ -22,7 +22,7 @@ class Users extends React.Component {
 
   updateForm(mode, userVals) {
     this.setState({
-      author: Object.assign({}, userVals),
+      user: Object.assign({}, userVals),
       formMode: mode,
     });
   }
